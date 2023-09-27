@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEXTO A INSERIR:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite algo..."
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COR:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonVermelho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VERMELHO"
+                android:layout_marginEnd="16dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonVerde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VERDE"
+                android:layout_marginEnd="16dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAzul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AZUL" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnInsere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSERE"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/btnCancela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCELA" />
+
+    </LinearLayout>
+
+</LinearLayout>
